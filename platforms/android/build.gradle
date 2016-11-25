@@ -15,6 +15,7 @@ buildscript {
 ext.multiarch=false
 
 dependencies {
+    compile 'net.hockeyapp.android:HockeySDK:4.0.0'
     compile fileTree(dir: 'libs', include: '*.jar')
     for (subproject in getProjectList()) {
         compile project(subproject)
@@ -35,6 +36,7 @@ android {
     }
 
     defaultConfig {
+	manifestPlaceholders = [HOCKEYAPP_APP_ID: "8967679dc48944be939884193218cc2c"]
         versionCode Integer.parseInt("" + getVersionCodeFromManifest() + "0")
     }
 
