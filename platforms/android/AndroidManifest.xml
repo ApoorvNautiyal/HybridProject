@@ -9,7 +9,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="${HOCKEYAPP_APP_ID}" />
+        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="8967679dc48944be939884193218cc2c" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
 </manifest>
